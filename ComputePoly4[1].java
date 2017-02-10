@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+//1111
 public class ComputePoly4 {
 	//filter all the void character. 
 	public static int isdigit(char c){
@@ -18,7 +19,7 @@ public class ComputePoly4 {
 		Pattern neg_p = Pattern.compile("[0123456789]"); 
 		Matcher neg_m = neg_p.matcher(str);
 		if (!neg_m.find()){
-			System.out.println("¸ÃÊäÈëÃ»ÓĞÊı×Ö£¬²»ÄÜ¼ÆËã"); 
+			System.out.println("è¯¥è¾“å…¥æ²¡æœ‰æ•°å­—ï¼Œä¸èƒ½è®¡ç®—"); 
 			return true;
 		}
 		return false;
@@ -36,7 +37,7 @@ public class ComputePoly4 {
 		   newsc = newsc.replace(neg_m.group(), "");
 		}
 		if(newsc.length() != 0){
-			System.out.println("¸ñÊ½´íÎó");
+			System.out.println("æ ¼å¼é”™è¯¯");
 			return true;
 		}
 		return false;
@@ -45,7 +46,7 @@ public class ComputePoly4 {
 		Pattern neg_p = Pattern.compile("[^ \\{\\}\\(\\)\\+-0123456789]"); 
 		Matcher neg_m = neg_p.matcher(str);
 		if (neg_m.find()){
-			System.out.println("ÊäÈëÁË²»ºÏ·¨×Ö·û"); 
+			System.out.println("è¾“å…¥äº†ä¸åˆæ³•å­—ç¬¦"); 
 			return true;
 		}
 		return false;
@@ -72,7 +73,7 @@ public class ComputePoly4 {
 			}//the match of the brackets
 		}
 		if (brackets.size() > 0) {
-			System.out.println("À¨ºÅ²»Æ¥Åä");
+			System.out.println("æ‹¬å·ä¸åŒ¹é…");
 			return true;
 		}
 		return false;
@@ -93,7 +94,7 @@ public class ComputePoly4 {
 			Pattern p = Pattern.compile("(\\(-?[0-9]+,-[0-9]+\\))"); 
 			Matcher m = p.matcher(newsc);
 			if (m.find()){
-				System.out.println("½×ÊıÎª¸º");
+				System.out.println("é˜¶æ•°ä¸ºè´Ÿ");
 				return true;
 			}
 		}
@@ -106,7 +107,7 @@ public class ComputePoly4 {
 		Matcher m = p.matcher(newsc);
 		Matcher n = q.matcher(newsc);
 		if (m.find() || n.find()){
-			System.out.println("Êı×Ö¹ı³¤");
+			System.out.println("æ•°å­—è¿‡é•¿");
 			return true;
 		}
 		return false;
@@ -199,23 +200,23 @@ public class ComputePoly4 {
 }
 /*public static int ErrorFind(String str){
 	if (illegalChar(str)){
-		System.out.println("ÊäÈëÁË²»ºÏ·¨×Ö·û"); 
+		System.out.println("è¾“å…¥äº†ä¸åˆæ³•å­—ç¬¦"); 
 		return 1;
 	}
 	if (formatError(str)){
 		if(bracketsUnmatch(str)){
-			System.out.println("¸ñÊ½´íÎó:À¨ºÅ²»Æ¥Åä");
+			System.out.println("æ ¼å¼é”™è¯¯:æ‹¬å·ä¸åŒ¹é…");
 			return 3;
 		}
-		System.out.println("¸ñÊ½´íÎó");
+		System.out.println("æ ¼å¼é”™è¯¯");
 		return 2;
 	}
 	if(minusSquare(str)){
-		System.out.println("½×ÊıÎª¸º");
+		System.out.println("é˜¶æ•°ä¸ºè´Ÿ");
 		return 4;
 	}
 	if (tooLong(str)){
-		System.out.println("Êı×Ö¹ı³¤");
+		System.out.println("æ•°å­—è¿‡é•¿");
 		return 5;
 	}
 	return 0;
@@ -224,7 +225,7 @@ public class ComputePoly4 {
 public static void main(String args[]){  
         byte[] buffer=new byte[512];  
         try {  
-            System.out.print("ÇëÄãÊäÈë: ");  
+            System.out.print("è¯·ä½ è¾“å…¥: ");  
             System.in.read(buffer);//input your data, and ends with a "Return" key.  
         } catch (IOException e) {  
             // TODO Auto-generated catch block  
@@ -237,17 +238,17 @@ public static void main(String args[]){
  */
 
 /*Scanner sc=new Scanner(System.in).nextLine();
-System.out.print("1ÊäÈë×Ö·û£º");
+System.out.print("1è¾“å…¥å­—ç¬¦ï¼š");
 String m=sc.next();
-System.out.println("ÄãÊäÈëµÄÊÇ"+m);*/
+System.out.println("ä½ è¾“å…¥çš„æ˜¯"+m);*/
 
 /*BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
-System.out.print("2ÊäÈë×Ö·û: ");
+System.out.print("2è¾“å…¥å­—ç¬¦: ");
 String s=null;
 try {
 s=bf.readLine();
 } catch (IOException e) { e.printStackTrace();}
-System.out.println("ÄãÊäÈëµÄÊÇ"+s);*/
+System.out.println("ä½ è¾“å…¥çš„æ˜¯"+s);*/
 
 /*Pattern pos_p = Pattern.compile("[0-9\\.]+");
 Pattern neg_p = Pattern.compile("-[0-9\\.]+"); 
