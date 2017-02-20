@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 //1111
+//2222
 public class ComputePoly4 {
 	//filter all the void character. 
 	public static int isdigit(char c){
