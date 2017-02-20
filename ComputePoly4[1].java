@@ -14,8 +14,9 @@ public class ComputePoly4 {
 	public static int isdigit(char c){
 		if (c >= 48 && c <= 57)
 			return 1;
-		else 
+		else {
 			return 0;
+		}
 	}// if the current char is a number
 	public static boolean voidFormula(String str){
 		Pattern neg_p = Pattern.compile("[0123456789]"); 
