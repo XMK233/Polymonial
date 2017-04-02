@@ -6,10 +6,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 //1111
 public class ComputePoly4 {
 	//filter all the void character. 
 	public static int isdigit(char c){
+		
+		
+		
 		if (c >= 48 && c <= 57)
 			return 1;
 		else {
@@ -159,7 +163,7 @@ public class ComputePoly4 {
 					continue;
 				}//the input of ZhiShu is finished, get one ZhiShu
 			}
-		}//main loop
+		}
 		
 		System.out.print("{");
 		for (i = 0; i < nums_hor + 1; i++){
