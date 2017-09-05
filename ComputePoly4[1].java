@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 //1111
 //2222
 ////asdfad
+///2017-9-5
 public class ComputePoly4 {
 	//filter all the void character. 
 	public static int isdigit(char c){
