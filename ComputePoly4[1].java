@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 //2222
 ////asdfad
 ///2017-9-5
+////september 15 second
 public class ComputePoly4 {
 	//filter all the void character. 
 	public static int isdigit(char c){
